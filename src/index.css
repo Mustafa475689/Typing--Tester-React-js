@@ -1,45 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap');
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
 }
 
 .app {
-    background-color: black;
+    background: linear-gradient(360deg, green 0%, rgb(19, 200, 206) 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.inside-app {
-    background-color: aliceblue;
-    width: 90vmin;
-    height: 80vmin;
-    border-radius: 6px;
-    border: 4px solid aqua;
-}
-
 h1 {
-    font-size: 74px;
-    padding-top: 8px;
+    color: aliceblue;
+    font-size: 80px;
+    margin-top: -100px;
 }
 
 marquee {
+    width: 500px;
     font-size: 30px;
-    font-style: italic;
-    background-color: aqua;
     color: aliceblue;
-    margin-top: -20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 input {
-    width: 300px;
-    height: 30px;
+    width: 480px;
+    height: 60px;
+    margin-bottom: 20px;
+    outline: none; 
+    padding-left: 8px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue, blur(50%);
+    color: black;
 }
 
+
 button {
-    width: 300px;
-    height: 50px;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 20px;
     font-size: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(19, 200, 206);
+    color: aliceblue;
+}
+
+.stats {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-top: 30px;
 }

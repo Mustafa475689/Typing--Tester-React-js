@@ -1,7 +1,5 @@
 import React, { useEffect, useReducer } from 'react'
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import "./index.css"
 
 function App() {
@@ -15,8 +13,6 @@ function App() {
   const [errors, setErrors] = useState(0);
  
 const textToType = "A quick brown fox jump over the lazy dog. I have a pencil, and I have a pen. I Lost the game "
-
-
 
 
 useEffect(() => {
@@ -90,7 +86,7 @@ const calAccuracy = () => {
       
       <h1>Typing Test</h1>
       <div className='start-typing'>
-        <marquee>{text}</marquee>
+        <marquee>{text}</marquee><br />
         <input type="text" className='input' value={userInput} onChange={handleChange}
         disabled={!started || timeLeft === 0} />
       </div>
@@ -98,7 +94,7 @@ const calAccuracy = () => {
       <button onClick={handleStart} disabled={started && timeLeft !== 0}>{ started ? 'restart': 'start'}</button>
 
       <div className='stats'>
-    <p>Time Left: {timeLeft}s</p>
+    <p>Time Left: {timeLeft} s</p>
     {timeLeft === 0 &&(
 
     <div className='result'>
